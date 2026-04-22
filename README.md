@@ -17,7 +17,7 @@ Ensure that the following tools are installed:
 
 Clone the repository and navigate into the project folder:
 ```
-git clone <insert url here>
+git clone https://github.com/SmartOval/aml-dnmt3b-pipeline
 cd aml-dnmt3b-pipeline
 ```
 Finally, build the Docker container:
