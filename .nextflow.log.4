@@ -1,0 +1,128 @@
+Apr-22 14:36:25.403 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Apr-22 14:36:25.610 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Apr-22 14:36:25.702 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nobel-makonnen/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Apr-22 14:36:25.771 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-22 14:36:25.774 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-22 14:36:25.782 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-22 14:36:25.831 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Apr-22 14:36:26.310 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-22 14:36:26.419 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/nobel-makonnen/aml-dnmt3b-pipeline/nextflow.config
+Apr-22 14:36:26.432 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/nobel-makonnen/aml-dnmt3b-pipeline/nextflow.config
+Apr-22 14:36:26.518 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-22 14:36:27.521 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-22 14:36:27.522 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-22 14:36:27.576 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nobel-makonnen/.nextflow/secrets/store.json
+Apr-22 14:36:27.585 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7a583586] - activable => nextflow.secret.LocalSecretsProvider@7a583586
+Apr-22 14:36:27.621 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-22 14:36:27.662 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [infallible_euclid] DSL2 - revision: bbacda3785
+Apr-22 14:36:27.831 [main] DEBUG nextflow.Session - Session UUID: 28abbabe-0596-4ef6-818a-8f8d00f32bc3
+Apr-22 14:36:27.832 [main] DEBUG nextflow.Session - Run name: infallible_euclid
+Apr-22 14:36:27.833 [main] DEBUG nextflow.Session - Executor pool size: 4
+Apr-22 14:36:27.866 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-22 14:36:27.886 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-22 14:36:27.965 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 11173
+  Created: 10-02-2026 15:17 UTC 
+  System: Linux 6.17.0-1011-azure
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 711165@sciapp-students [10.2.0.4]
+  CPUs: 4 - Mem: 15.6 GB (5.8 GB) - Swap: 0 (0)
+Apr-22 14:36:28.040 [main] DEBUG nextflow.Session - Work-dir: /home/nobel-makonnen/aml-dnmt3b-pipeline/work [ext2/ext3]
+Apr-22 14:36:28.042 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nobel-makonnen/aml-dnmt3b-pipeline/bin
+Apr-22 14:36:28.072 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-22 14:36:28.113 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Apr-22 14:36:28.164 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Apr-22 14:36:28.340 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-22 14:36:28.373 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Apr-22 14:36:28.560 [main] DEBUG nextflow.Session - Session start
+Apr-22 14:36:29.267 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-22 14:36:30.055 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 14:36:30.056 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 14:36:30.084 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-22 14:36:30.103 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Apr-22 14:36:30.110 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-22 14:36:30.178 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PREPROCESS_AML': maxForks=0; fair=false; array=0
+Apr-22 14:36:30.287 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 14:36:30.288 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 14:36:30.292 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SUMMARIZE_AML': maxForks=0; fair=false; array=0
+Apr-22 14:36:30.302 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SUMMARIZE_AML, PREPROCESS_AML
+Apr-22 14:36:30.308 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Apr-22 14:36:30.323 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PREPROCESS_AML
+Apr-22 14:36:30.325 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SUMMARIZE_AML
+Apr-22 14:36:30.330 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_6f203460ebcad6ac: /home/nobel-makonnen/aml-dnmt3b-pipeline/main.nf
+  Script_4c6d8f0730099665: /home/nobel-makonnen/aml-dnmt3b-pipeline/modules/aml_pipeline.nf
+Apr-22 14:36:30.330 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-22 14:36:30.331 [main] DEBUG nextflow.Session - Session await
+Apr-22 14:36:30.332 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/test/; pattern: *.csv; options: [:]
+Apr-22 14:36:30.903 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-22 14:36:30.909 [Task submitter] INFO  nextflow.Session - [9a/4d9882] Submitted process > PREPROCESS_AML (1)
+Apr-22 14:36:31.078 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: PREPROCESS_AML (1); status: COMPLETED; exit: 2; error: -; workDir: /home/nobel-makonnen/aml-dnmt3b-pipeline/work/9a/4d988208f938c3a55e7962993dc809]
+Apr-22 14:36:31.081 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-22 14:36:31.111 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PREPROCESS_AML (1); work-dir=/home/nobel-makonnen/aml-dnmt3b-pipeline/work/9a/4d988208f938c3a55e7962993dc809
+  error [nextflow.exception.ProcessFailedException]: Process `PREPROCESS_AML (1)` terminated with an error exit status (2)
+Apr-22 14:36:31.164 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'PREPROCESS_AML (1)'
+
+Caused by:
+  Process `PREPROCESS_AML (1)` terminated with an error exit status (2)
+
+
+Command executed:
+
+  python scripts/preprocess_aml.py       --input aml_toy_data.csv       --output aml_toy_data.cleaned.csv
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  python: can't open file 'scripts/preprocess_aml.py': [Errno 2] No such file or directory
+
+Work dir:
+  /home/nobel-makonnen/aml-dnmt3b-pipeline/work/9a/4d988208f938c3a55e7962993dc809
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Apr-22 14:36:31.199 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `PREPROCESS_AML (1)` terminated with an error exit status (2)
+Apr-22 14:36:31.207 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-22 14:36:31.208 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-22 14:36:31.208 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-22 14:36:31.254 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=130ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Apr-22 14:36:31.256 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=130ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Apr-22 14:36:31.258 [TaskFinalizer-1] DEBUG nextflow.Session - null
+java.lang.InterruptedException: null
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Thread.join(Thread.java:1313)
+	at java.base/java.lang.Thread.join(Thread.java:1381)
+	at nextflow.trace.AnsiLogObserver.onFlowComplete(AnsiLogObserver.groovy:520)
+	at nextflow.Session$_notifyFlowComplete_lambda39.doCall(Session.groovy:1121)
+	at nextflow.Session.notifyEvent(Session.groovy:1151)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1121)
+	at nextflow.Session.shutdown0(Session.groovy:779)
+	at nextflow.Session.abort(Session.groovy:834)
+	at nextflow.Session.fault(Session.groovy:796)
+	at nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:753)
+	at nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:736)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1339)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1094)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:726)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Apr-22 14:36:31.481 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-22 14:36:31.541 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

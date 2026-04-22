@@ -1,0 +1,5 @@
+2026-04-22 14:36:27	4.5s	infallible_euclid	ERR	bbacda378557d36cd0e37aec7af63ee9	28abbabe-0596-4ef6-818a-8f8d00f32bc3	nextflow run main.nf
+2026-04-22 14:46:06	4.1s	awesome_davinci	ERR	bbacda378557d36cd0e37aec7af63ee9	24de1fc9-8976-4b9b-a1e0-95c5b739708b	nextflow run main.nf
+2026-04-22 14:48:34	6.5s	extravagant_hilbert	OK	bbacda378557d36cd0e37aec7af63ee9	a5306e57-7767-4f06-adba-1f6eb7decae4	nextflow run main.nf
+2026-04-22 19:12:00	8.5s	drunk_perlman	OK	bbacda378557d36cd0e37aec7af63ee9	02167827-5022-4a89-92c3-c34101a8f67b	nextflow run main.nf -profile docker
+2026-04-22 19:14:26	7.5s	sleepy_bhabha	OK	bbacda378557d36cd0e37aec7af63ee9	30df37bd-ff73-479f-96f7-6d428cbc15a0	nextflow run main.nf -profile docker
