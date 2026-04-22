@@ -48,13 +48,6 @@ After running the pipline, results will be created in the results/ directory:
 * results/summary/mrd_group_means.csv
     * Table of average DNMT3B expression and GWMB group by MRD status.
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
 ## Authors
 
 Nobel Makonnen 
