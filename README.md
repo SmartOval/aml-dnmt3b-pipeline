@@ -46,7 +46,7 @@ After running the pipline, results will be created in the results/ directory:
     * Correlation between DNMT3B expression and GWMB
     * Group-wise averages by their respective MRD statuses.
 * results/summary/mrd_group_means.csv
-    Table of average DNMT3B expression and GWMB group by MRD status.
+    * Table of average DNMT3B expression and GWMB group by MRD status.
 
 ## Help
 
