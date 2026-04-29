@@ -9,14 +9,15 @@ The workflow processes a small toy dataset, cleans the data and generates summar
 
 ## Getting Started
 
-### Setup
+## Setup
 
 Ensure that the following tools are installed:
-- Docker 
+- Docker
 - Nextflow
 
 Clone the repository and navigate into the project folder:
-```
+
+```bash
 git clone https://github.com/SmartOval/aml-dnmt3b-pipeline
 cd aml-dnmt3b-pipeline
 ```

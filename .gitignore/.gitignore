@@ -1,0 +1,22 @@
+# Nextflow runtime files
+.nextflow/
+work/
+.nextflow.log*
+.nextflow.cache/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS/editor files
+.DS_Store
+.vscode/
+
+# Generated pipeline outputs
+results/cleaned/
+results/summary/
+
+# Keep placeholder files if needed
+!results/.gitkeep
